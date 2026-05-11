@@ -117,3 +117,38 @@ input {
 .nav-links a:hover {
     opacity: 0.7;
 }
+
+.contato-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .pizza-card {
+        width: 90%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+}
