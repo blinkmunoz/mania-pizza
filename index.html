@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="registro.html">
+    <script src="index.js"></script>
+    
     <title>Mania de pizza</title>
 </head>
 <body>
@@ -15,89 +16,100 @@
        
     <header>
         <nav class="navbar">
-        <h2 class="logo">🍕 Mania de Pizza</h2>
+            <h2 class="logo">🍕 Mania de Pizza</h2>
+        
 
-            <ul class="nav-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Pizzas</a></li>
-                <li><a href="registro.html">Contato</a></li>
-            </ul>
+                <ul class="nav-links">
+                    <li><a href="#pizzas">Pizzas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="registro.html">Cadastro</a></li>
+                 </ul>
         </nav>
     </header>
 
     <p class="paragrafo">Bem-vindo à Mania de Pizza! Aqui você encontrará as melhores pizzas da cidade, feitas com ingredientes frescos e uma massa deliciosa. Venha experimentar nossas opções de sabores e aproveite uma experiência gastronômica única!</p>
 
-         <h2>Nossas Pizzas</h2>
+            <h2 id="pizzas">Nossas Pizzas</h2>
     <div class="pizza-container">
 
         <div class="pizza-card">
             <h3>Mega</h3>
-            <p>
-            Pizza grande com ingredientes especiais.
-            24 pedaços para compartilhar.
-            60 cm de diâmetro.
-            </p>
-    </div>
+                <p>
+                    Pizza grande com ingredientes especiais.
+                    24 pedaços para compartilhar.
+                    60 cm de diâmetro.
+                </p>
+        </div>
 
-    <div class="pizza-card">
-        <h3>Família</h3>
-        <p>
-            Pizza familiar deliciosa.
-            20 pedaços para compartilhar.
-            50 cm de diâmetro.
-        </p>
-    </div>
+        <div class="pizza-card">
+            <h3>Família</h3>
+                <p>
+                    Pizza familiar deliciosa.
+                    20 pedaços para compartilhar.
+                    50 cm de diâmetro.
+                </p>
+        </div>
 
-    <div class="pizza-card">
-        <h3>Gigante</h3>
-        <p>
-            Pizza gigante com vários ingredientes.
-            16 pedaços.
-            40 cm de diâmetro.
-        </p>
-    </div>
+        <div class="pizza-card">
+            <h3>Gigante</h3>
+                <p>
+                    Pizza gigante com vários ingredientes.
+                    16 pedaços.
+                    40 cm de diâmetro.
+                </p>
+        </div>
 
-    <div class="pizza-card">
-        <h3>Grande</h3>
-        <p>
-            Pizza tradicional grande.
-            12 pedaços.
-            30 cm de diâmetro.
-        </p>
-    </div>
+        <div class="pizza-card">
+            <h3>Grande</h3>
+                <p>
+                    Pizza tradicional grande.
+                    12 pedaços.
+                    30 cm de diâmetro.
+                </p>
+        </div>
 
-    <div class="pizza-card">
-        <h3>Media</h3>
-        <p>
-            Pizza tradicional média.
-            8 pedaços.
-            25 cm de diâmetro.
-        </p>
-    </div>
+        <div class="pizza-card">
+            <h3>Média</h3>
+                <p>
+                    Pizza tradicional média.
+                    8 pedaços.
+                    25 cm de diâmetro.
+                </p>
+        </div>
 
-    <div class="pizza-card">
-        <h3>Pequena</h3>
-        <p>
-            Pizza tradicional pequena.
-            4 pedaços.
-            20 cm de diâmetro.
-        </p>
+        <div class="pizza-card">
+            <h3>Pequena</h3>
+                <p>
+                    Pizza tradicional pequena.
+                    4 pedaços.
+                    20 cm de diâmetro.
+                </p>
+    
+        </div>
     </div>
+    
 
-  
-    <h2>
-    Contato
-    </h2>
-    <p>Entre em contato conosco para mais informações ou para fazer seu pedido!</p>
+    <h2 id="contato">Contato</h2>
+   
+        <p>Entre em contato conosco para mais informações ou para fazer seu pedido!</p>
     <ul>
         <li>Telefone: (47) 99658-7973</li>
         <li>Email: contato@maniadepizza.com.br</li>
         <li>Endereço: Av Brasil, 3625 - Mariluz - Itapoá/SC</li>
     </ul>
     <div class="contato-form">
-        <input placeholder="Nome">
-        <input placeholder="Telefone">
-        <button>Enviar</button>
+        <input type="text" placeholder="Nome">
+        <input type="tel" placeholder="Telefone">
+        <button onclick="enviarPedido()">
+            Enviar
+        </button>
+        <a 
+href="https://wa.me/5547996587973" 
+target="_blank"
+class="whatsapp-btn"
+>
+Fazer Pedido no WhatsApp
+</a>
     </div>
 </body>
 </html>
